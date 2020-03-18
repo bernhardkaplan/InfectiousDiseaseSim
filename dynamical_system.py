@@ -56,7 +56,7 @@ class CoronaSim:
 
 
     def update_healthy(self):
-        dy = - self.r_yx * self.prev_state['y'] * self.prev_state['x'] \
+        dy = - self.r_yx * self.prev_state['y'] * self.prev_state['x']
         self.state['y'] += self.dt * dy 
         
 
