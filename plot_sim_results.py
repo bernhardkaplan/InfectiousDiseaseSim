@@ -17,19 +17,23 @@ def plot_sim_data(fn, scale=1.):
     ax = axes[0]
     ax.plot(t, x)
     ax.set_ylabel('x: infected')
+    ax.set_xticklabels([])
 
     ax = axes[1]
     ax.plot(t, z)
     ax.set_ylabel('z: dead')
+    ax.set_xticklabels([])
 
     ax = axes[2]
     ax.plot(t, w)
     ax.set_ylabel('w: recovered')
+    ax.set_xticklabels([])
 
     ax = axes[3]
     ax.plot(t, y)
     ax.set_ylabel('y: healthy')
     ax.set_xlabel('Time')
+    ax.set_xticklabels([])
 
     plt.show()
 
