@@ -16,7 +16,7 @@ class CoronaSim:
         self.RNG = np.random.RandomState(self.params['seed'])
         self.dt = self.params['dt']
         self.states = []
-        self.output_fn = self.params['output_folder'] + output_fn
+        self.output_fn = self.params.paths['output_folder'] + self.params.paths['sim_output_fn']
         
     def run_sim(self):
         for _step in range(n_steps):
